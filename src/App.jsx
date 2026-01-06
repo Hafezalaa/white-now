@@ -5,19 +5,30 @@ import Featuresgrid from "../Components/Featuresgrid";
 import SubSec from "../Components/SubSec";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
+import StartPage from "../Components/StartPage";
+import Portfolio from "../Components/Portfolio";
+import Us from "../Components/Us";
+import Services from "../Components/Services";
+import Impressum from "../Components/Impressum";
+import Datenschutz from "../Components/Datenschutz";
+import AGB from "../Components/AGB";
 
 function App() {
   return (
     <>
       <Header />
-      <MainSec/>
-      <Featuresgrid/>
-      <SubSec/>
-      <Contact/>
-      <Footer/>
+      
       <Routes>
-
+        <Route path="/" element={<StartPage/>}/>
+        <Route path="contact" element={<Contact />} />
+        <Route path="portfolio" element={<Portfolio/>}/>
+        <Route path="us" element={<Us/>}/>
+        <Route path="services" element={<Services/>}/>
+        <Route path="imprint" element={<Impressum/>} />
+        <Route path="data" element={<Datenschutz/>} />
+        <Route path="agb" element={<AGB/>} />
       </Routes>
+      <Footer />
     </>
   );
 }

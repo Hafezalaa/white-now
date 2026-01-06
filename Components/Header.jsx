@@ -44,19 +44,19 @@ const Header = () => {
             : "text-white hidden md:flex  "
         } " md:ml-30 place-items-center w-[750px] h-20 pl-10 "`}
       >
-        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="">
+        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="/">
           Startseite
         </NavLink>
-        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="">
+        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="services">
           Dienstleistungen
         </NavLink>
-        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="">
+        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="portfolio">
           Portfolio
         </NavLink>
-        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="">
+        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="us">
           Über uns
         </NavLink>
-        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="">
+        <NavLink className="hover:text-slate-800 hover:scale-125 pr-12" to="contact">
           Kontakt
         </NavLink>
       </div>
