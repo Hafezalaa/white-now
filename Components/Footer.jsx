@@ -56,19 +56,19 @@ const Footer = () => {
       </div>
 
 
-      <div className="h-20 bg-sky-100 w-full flex place-content-between text-slate-900 place-items-center px-16">
+      <div className="h-20 bg-sky-100 w-full flex flex-col md:flex-row place-content-between text-slate-900 md:place-items-center px-16">
         <div>
           &copy; {new Date().getFullYear()} White Now Gebäudereinigung. Alle
           Rechte vorbehalten.
         </div>
-        <div className="w-[20%] flex place-content-around">
-          <NavLink to="imprint" className="hover:text-sky-900 hover:scale-110">
+        <div className="w-[30%] flex place-content-around">
+          <NavLink to="imprint" className="hover:text-sky-900 hover:scale-110 mr-5">
             Impressum
           </NavLink>
-          <NavLink to="data" className="hover:text-sky-900 hover:scale-110">
+          <NavLink to="data" className="hover:text-sky-900 hover:scale-110 mr-5">
             DatenSchutz
           </NavLink>
-          <NavLink to="agb" className="hover:text-sky-900 hover:scale-110">AGB</NavLink>
+          <NavLink to="agb" className="hover:text-sky-900 hover:scale-110 mr-5">AGB</NavLink>
         </div>
       </div>
     </div>
