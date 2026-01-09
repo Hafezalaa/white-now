@@ -65,31 +65,31 @@ const Header = () => {
           <>
             <NavLink
               className="text-slate-700 hover:scale-y-125 h-16 w-full mt-4"
-              to=""
+              to="/"
             >
               Startseite
             </NavLink>
             <NavLink
               className="text-slate-700 hover:scale-y-125 h-16 w-full mt-4"
-              to=""
+              to="services"
             >
               Dienstleistungen
             </NavLink>
             <NavLink
               className="text-slate-700 hover:scale-y-125 h-16 w-full mt-4"
-              to=""
+              to="portfolio"
             >
               Portfolio
             </NavLink>
             <NavLink
               className="text-slate-700 hover:scale-y-125 h-16 w-full mt-4"
-              to=""
+              to="us"
             >
               Über uns
             </NavLink>
             <NavLink
               className="text-slate-700 hover:scale-y-125 h-16 w-full mt-4"
-              to=""
+              to="contact"
             >
               Kontakt
             </NavLink>

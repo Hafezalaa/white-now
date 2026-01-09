@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="relative  h-100 w-full">
+    <div className=" relative  h-100 w-full">
 
-      <div className="h-80 w-full bg-sky-900  p-4">
-<div className="absolute left-6  w-48 h-48 bg-white/10 rounded-[60%_90%_75%_70%] " />
-<div className="absolute left-36 mt-20 w-48 h-48 bg-white/20 rounded-[75%_70%_60%_90%] " />
+      <div className=" h-80 w-full bg-sky-900  p-4">
+<div className=" hidden md:block md:absolute left-6  w-48 h-48 bg-white/10 rounded-[60%_90%_75%_70%] " />
+<div className=" hidden md:block md:absolute left-36 mt-20 w-48 h-48 bg-white/20 rounded-[75%_70%_60%_90%] " />
         
-       <div className="absolute  right-20 top-40 -translate-y-1/2 backdrop-blur-md  rounded-2xl p-6 w-72 text-white">
+       <div className="  absolute  right-20 top-40 -translate-y-1/2 backdrop-blur-md  rounded-2xl p-6 w-72 text-white">
   <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
      Kontakt
   </h3>
