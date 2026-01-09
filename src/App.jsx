@@ -10,12 +10,13 @@ import Services from "../Components/Services";
 import Impressum from "../Components/Impressum";
 import Datenschutz from "../Components/Datenschutz";
 import AGB from "../Components/AGB";
+import CookieConsent from "../Components/CookieConsent";
 
 function App() {
   return (
     <>
       <Header />
-      
+      <CookieConsent/>
       <Routes>
         <Route path="/" element={<StartPage/>}/>
         <Route path="contact" element={<Contact />} />
