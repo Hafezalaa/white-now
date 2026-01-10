@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const navigate = useNavigate();
- 
+ const API = import.meta.env.VITE_myBEHost;
   const {
     register,
     handleSubmit,
@@ -19,7 +19,7 @@ export default function Contact() {
   const onSubmit = async (data) => {
     try {
       console.log(data);
-    const res = await axios.post("http://localhost:9117/contact", data);
+    const res = await axios.post(`${API}/contact`, data);
     // send to backend / email service here
     reset();
     navigate("/thanks");
