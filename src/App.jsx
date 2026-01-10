@@ -11,6 +11,7 @@ import Impressum from "../Components/Impressum";
 import Datenschutz from "../Components/Datenschutz";
 import AGB from "../Components/AGB";
 import CookieConsent from "../Components/CookieConsent";
+import ThankYou from "../Components/ThankYou";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="imprint" element={<Impressum/>} />
         <Route path="data" element={<Datenschutz/>} />
         <Route path="agb" element={<AGB/>} />
+        <Route path="thanks" element={<ThankYou/>}/>
       </Routes>
       <Footer />
     </>

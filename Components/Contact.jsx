@@ -1,18 +1,33 @@
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  const navigate = useNavigate();
+ 
   const {
     register,
     handleSubmit,
     watch,
+    reset,
+
     formState: { errors },
   } = useForm();
 
   const message = watch("message", "");
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      console.log(data);
+    const res = await axios.post("http://localhost:9117/contact", data);
     // send to backend / email service here
+    reset();
+    navigate("/thanks");
+  } catch (error) {
+    console.error("stop", error.message);
+  }
+
+    
   };
 
   return (
@@ -22,9 +37,7 @@ export default function Contact() {
           onSubmit={handleSubmit(onSubmit)}
           className="bg-sky-100 rounded-2xl shadow-lg p-8 space-y-6"
         >
-          <h2 className="text-2xl font-bold text-center">
-            Ihre Anforderungen
-          </h2>
+          <h2 className="text-2xl font-bold text-center">Ihre Anforderungen</h2>
 
           {/* Kundentyp */}
           <div>

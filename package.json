@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "axios": "^1.13.2",
     "emailjs-com": "^3.2.0",
     "random-string-gen": "^1.1.4",
     "react": "^19.2.0",
